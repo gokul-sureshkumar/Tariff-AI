@@ -1,0 +1,19 @@
+{
+  "features": [
+    "account_length",
+    "vmail_message",
+    "total_mins",
+    "total_calls",
+    "day_mins_share",
+    "eve_mins_share",
+    "night_mins_share",
+    "intl_mins_share",
+    "custserv_calls"
+  ],
+  "share_cols": [
+    "day_mins_share",
+    "eve_mins_share",
+    "night_mins_share",
+    "intl_mins_share"
+  ]
+}

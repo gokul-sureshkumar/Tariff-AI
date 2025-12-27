@@ -1,0 +1,325 @@
+.customer-dashboard {
+  min-height: 100vh;
+  /* dark navy -> deep gradient like reference image */
+  background: linear-gradient(135deg, #041032 0%, #07224a 45%, #0b2b55 100%);
+  color: #e6f7ff;
+}
+
+/* navbar: translucent dark bar so it blends with the hero */
+.navbar {
+  background: rgba(3, 19, 45, 0.9);
+  box-shadow: 0 6px 30px rgba(2, 8, 25, 0.6);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  /* span full width so brand and actions can sit at page edges */
+  max-width: 100%;
+  padding: 0 1px;
+  position: relative;
+  display: block;
+  height: 70px;
+}
+
+
+/* create visible TariffAI brand if the DOM doesn't already have it.
+   If your header already contains a brand element, remove this pseudo-element
+   or update the HTML instead to avoid duplicate text. */
+.customer-dashboard .nav-brand {
+  /* visually hide existing markup if you plan to use the pseudo label instead */
+  visibility: hidden;
+}
+
+.customer-dashboard .nav-brand::before {
+  content: "TariffAI";
+  visibility: visible;
+  position: absolute;
+  left: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  background: linear-gradient(90deg, #ffffff 0%, #00e3ff 60%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  z-index: 120;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+  padding-right: 0;
+}
+
+/* pin the dashboard / logout links to the right edge of the page */
+.customer-dashboard .nav-links {
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 0;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  z-index: 130;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #cbd5e1;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #00e3ff;
+  background: rgba(0, 227, 255, 0.06);
+  transform: translateY(-1px);
+}
+
+/* ensure the logout button looks like a pill and sits at extreme right */
+.customer-dashboard .logout-btn {
+  border-radius: 10px;
+  padding: 8px 14px;
+  margin-left: 8px;
+}
+
+/* logout button should match accent */
+.logout-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  color: #fff;
+}
+.logo{
+  margin-left: -190px;
+  cursor: pointer;
+}
+.nav-links{
+ margin-right: -100px;
+}
+
+/* page content wrapper */
+.dashboard-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+
+/* headers & text tuned for dark bg */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.dashboard-header h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.dashboard-header p {
+  color: #b6cfe0;
+  font-size: 1.1rem;
+}
+
+/* current savings card uses cyan gradient accent */
+.current-savings {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: linear-gradient(135deg, #00d9ff 0%, #00a8ff 100%);
+  color: #042028;
+  padding: 20px 24px;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 227, 255, 0.12);
+}
+
+.savings-amount {
+  font-size: 1.75rem;
+  font-weight: 700;
+  display: block;
+  color: #02131a;
+}
+
+.savings-label {
+  font-size: 0.9rem;
+  opacity: 0.95;
+}
+
+/* layout grids */
+.dashboard-grid {
+  display: grid;
+  gap: 32px;
+}
+
+.recommendations-section {
+  margin-bottom: 24px;
+}
+
+.section-header {
+  margin-bottom: 24px;
+}
+
+.section-header h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.section-header p {
+  color: #b6cfe0;
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.usage-summary {
+  text-align: center;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255,255,255,0.04);
+}
+
+.usage-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #00e3ff;
+  display: block;
+  text-shadow: 0 6px 30px rgba(0, 227, 255, 0.08);
+}
+
+.usage-label {
+  color: #9fb9c9;
+  font-size: 0.9rem;
+}
+
+.analytics-section {
+  margin-bottom: 24px;
+}
+
+/* charts and cards use subtle translucent panels to match dark layout */
+.charts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.card.chart-card {
+  background: linear-gradient(135deg, #0a174e 0%, #12245c 100%) !important;
+  border-radius: 20px;
+  padding: 20px;
+  color: #ffffff;
+  box-shadow:
+    0 8px 30px rgba(2, 8, 25, 0.45),
+    0 18px 60px rgba(3, 19, 45, 0.35),
+    0 6px 30px rgba(0, 227, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.card.chart-card h3 {
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow: 0 2px 10px rgba(0, 227, 255, 0.25);
+}
+
+
+/* === Header / topbar override to match OverviewPage dark navy + cyan accents ===
+   This forces any white header/topbar inside CustomerDashboard to use the
+   page gradient and adjusts header buttons/links to the dark theme.
+*/
+.customer-dashboard .navbar,
+.customer-dashboard header,
+.customer-dashboard .topbar,
+.customer-dashboard .app-header {
+  background: linear-gradient(135deg, #041032 0%, #07224a 45%, #0b2b55 100%) !important;
+  color: #e6f7ff !important;
+  box-shadow: 0 6px 30px rgba(2, 8, 25, 0.6) !important;
+  border-bottom: none !important;
+}
+
+/* nav links / buttons inside header */
+.customer-dashboard .nav-links .nav-link,
+.customer-dashboard .nav-links a,
+.customer-dashboard .logout-btn,
+.customer-dashboard .nav-button {
+  background: transparent !important;
+  color: #cbd5e1 !important;
+  border: 1px solid rgba(255,255,255,0.06);
+  box-shadow: none !important;
+}
+
+/* active / primary header buttons use cyan accent */
+.customer-dashboard .nav-links .nav-link.active,
+.customer-dashboard .nav-links .nav-button.primary,
+.customer-dashboard .btn-primary,
+.customer-dashboard .nav-button--primary {
+  background: linear-gradient(90deg, #00e3ff 0%, #00a8ff 100%) !important;
+  color: #042028 !important;
+  border: none !important;
+  box-shadow: 0 8px 30px rgba(0, 227, 255, 0.12) !important;
+}
+
+/* place brand text and push header actions to the right corner (CustomerDashboard only) */
+
+/* keep header responsive */
+@media (max-width: 768px) {
+  .customer-dashboard .nav-brand::before {
+    left: 16px;
+    font-size: 1.15rem;
+  }
+  .customer-dashboard .nav-links {
+    right: 16px;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .charts-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .plans-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .current-savings {
+    align-self: stretch;
+  }
+  
+  .dashboard-content {
+    padding: 24px 16px;
+  }
+}

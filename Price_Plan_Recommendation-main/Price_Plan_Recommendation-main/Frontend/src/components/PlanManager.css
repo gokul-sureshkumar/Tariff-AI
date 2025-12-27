@@ -1,0 +1,234 @@
+.plan-manager {
+  width: 100%;
+}
+
+.manager-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.manager-header h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.add-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.plans-table-container {
+  overflow-x: auto;
+  padding: 0;
+}
+
+.plans-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+}
+
+.plans-table th {
+  text-align: left;
+  padding: 20px 16px;
+  font-weight: 600;
+  color: #374151;
+  border-bottom: 2px solid #e5e7eb;
+  background: #f9fafb;
+  font-size: 0.9rem;
+}
+
+.plans-table td {
+  padding: 20px 16px;
+  border-bottom: 1px solid #e5e7eb;
+  color: #6b7280;
+}
+
+.plan-name {
+  font-weight: 600;
+  color: #374151;
+}
+
+.plan-price {
+  font-weight: 600;
+  color: #11998e;
+  font-size: 1.1rem;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.action-btn {
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit-btn {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.edit-btn:hover {
+  background: #dbeafe;
+  transform: scale(1.1);
+}
+
+.delete-btn {
+  background: #fef2f2;
+  color: #dc2626;
+}
+
+.delete-btn:hover {
+  background: #fee2e2;
+  transform: scale(1.1);
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.modal-content {
+  width: 100%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: white;
+  position: relative;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.modal-header h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: #6b7280;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.close-btn:hover {
+  color: #374151;
+  background: #f3f4f6;
+}
+
+.plan-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.feature-input {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.feature-input .form-control {
+  flex: 1;
+}
+
+.remove-feature-btn {
+  background: #fef2f2;
+  border: none;
+  color: #dc2626;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.remove-feature-btn:hover {
+  background: #fee2e2;
+}
+
+.add-feature-btn {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  padding-top: 24px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.modal-actions .btn-primary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@media (max-width: 768px) {
+  .manager-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .modal-content {
+    margin: 10px;
+    max-height: calc(100vh - 20px);
+  }
+  
+  .plans-table-container {
+    font-size: 0.9rem;
+  }
+}

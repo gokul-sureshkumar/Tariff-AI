@@ -1,0 +1,182 @@
+.cost-pie-chart {
+  height: 100%;
+  display: flex;
+  flex-direction: row;  /* side-by-side */
+  align-items: center;
+  justify-content: center;
+  padding: 24px 0;
+  gap: 36px;
+  background: linear-gradient(135deg, #0a174e 0%, #12245c 100%) !important;
+  border-radius: 16px;
+  box-shadow:
+    0 8px 30px rgba(2, 8, 25, 0.45),
+    0 18px 60px rgba(3, 19, 45, 0.35),
+    0 6px 30px rgba(0, 227, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.pie-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(135deg, #0a174e 0%, #12245c 100%) !important;
+  border-radius: 16px;
+  box-shadow:
+    0 8px 30px rgba(2, 8, 25, 0.45),
+    0 18px 60px rgba(3, 19, 45, 0.35),
+    0 6px 30px rgba(0, 227, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.pie-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.pie-segment {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.pie-segment:hover {
+  filter: brightness(1.25);
+  transform: scale(1.03);
+  transform-origin: center;
+}
+
+/* Dark center like plan cards */
+.pie-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: linear-gradient(135deg, #0a174e, #12245c) ;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 26px rgba(0, 227, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.center-value {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #f2f5f6;
+  text-shadow: 0 2px 12px rgba(0, 227, 255, 0.25);
+}
+
+.center-label {
+  font-size: 0.75rem;
+  color: #a3b3d3;
+  opacity: 0.9;
+}
+
+/* Legend styled like plan cards */
+.pie-legend,
+.usage-legend {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  width: 190px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.legend-item:hover {
+  background: rgba(239, 241, 241, 0.08);
+  transform: translateX(4px);
+  box-shadow: 0 6px 20px rgba(239, 240, 241, 0.2);
+}
+
+.legend-color {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0, 227, 255, 0.3);
+}
+
+.legend-text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.legend-label {
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+.legend-value {
+  color: #a3b3d3;
+  font-size: 0.8rem;
+}
+/* Dark card container for Usage Distribution and Cost Comparison */
+.usage-distribution-card,
+.cost-comparison-card {
+  background: linear-gradient(135deg, #0a174e 0%, #12245c 100%) !important;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow:
+    0 8px 30px rgba(2, 8, 25, 0.45),
+    0 18px 60px rgba(3, 19, 45, 0.35),
+    0 6px 30px rgba(0, 227, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #fff !important;
+}
+
+/* Optional: Style the section title */
+.usage-distribution-card h2,
+.cost-comparison-card h2 {
+  color: #ffffff !important;
+  font-weight: 700;
+  text-shadow: 0 2px 10px rgba(0, 227, 255, 0.25);
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cost-pie-chart {
+    flex-direction: column;
+    gap: 24px;
+    padding: 16px;
+  }
+
+  .pie-container {
+    width: 160px;
+    height: 160px;
+  }
+
+  .pie-center {
+    width: 70px;
+    height: 70px;
+  }
+
+  .center-value {
+    font-size: 1.05rem;
+  }
+
+  .center-label {
+    font-size: 0.65rem;
+  }
+}

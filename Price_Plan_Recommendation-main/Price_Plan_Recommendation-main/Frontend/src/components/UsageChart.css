@@ -1,0 +1,105 @@
+.usage-chart {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 0;
+  background: linear-gradient(135deg, #0a174e 0%, #12245c 100%) !important;
+}
+
+.chart-bars {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.bar-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.bar-container {
+  height: 160px;
+  width: 60px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.bar {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+  transition: all 0.3s ease;
+  position: relative;
+  min-height: 20px;
+}
+
+.current-bar {
+  background: linear-gradient(180deg, #cb4c4c 0%, #98135f 100%);
+}
+
+.recommended-bar {
+  background: linear-gradient(180deg, #b3cd06 0%, #0d9488 100%);
+}
+
+.bar-value {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #f2f5f6; /* light text */
+  background: rgba(10, 23, 78, 0.85); /* matches card background */
+  padding: 4px 8px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 227, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.bar-label {
+  font-weight: 500;
+  color: #a3b3d3;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.savings-indicator {
+  text-align: center;
+  padding: 16px;
+  background: rgba(13, 148, 136, 0.15); /* subtle teal tint */
+  border: 1px solid rgba(94, 234, 212, 0.3);
+  border-radius: 8px;
+}
+
+.savings-text {
+  color: #5eead4;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .chart-bars {
+    height: 150px;
+  }
+
+  .bar-container {
+    height: 120px;
+    width: 50px;
+  }
+
+  .bar-value {
+    font-size: 0.8rem;
+    top: -20px;
+  }
+
+  .bar-label {
+    font-size: 0.8rem;
+  }
+}

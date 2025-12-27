@@ -1,0 +1,134 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 20px;
+  background: linear-gradient(135deg, #283456 20%, #07224a 50%, #375a89 100%);
+}
+
+.login-card {
+  background: linear-gradient(135deg, #041032 0%, #07224a 45%, #0b2b55 100%) !important;
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 32px 28px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 8px 30px rgba(2, 8, 25, 0.6);
+  border: 1px solid rgba(0, 227, 255, 0.1);
+  text-align: center;
+  color: #ffffff;
+}
+
+.login-header h2 {
+  color: #fbfafa;
+  font-weight: 700;
+  margin-bottom: 8px;
+  font-size: 1.8rem;
+}
+
+.login-header p {
+  color: #b4b7be;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.role-selector {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 6px;
+  border-radius: 12px;
+}
+
+.role-btn {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: #c0b2a0;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.role-btn.active {
+  background: #00c8ff;
+  color: #020617;
+  box-shadow: 0 4px 16px rgba(0, 200, 255, 0.5);
+}
+
+.input-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #00c8ff;
+  font-size: 18px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 14px 16px 14px 54px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 227, 255, 0.15);
+  border-radius: 8px;
+  color: #f2f5f6;
+  font-size: 1rem;
+  outline: none;
+  text-indent: 40px;
+}
+
+.form-control::placeholder {
+  color: #94a3b8;
+}
+.form-group{
+  color:white;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  font-size: 1rem;
+  background: #00c8ff;
+  color: #020617;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 6px 20px rgba(0, 200, 255, 0.4);
+  transition: transform 0.2s ease;
+}
+
+.login-btn:hover {
+  transform: translateY(-2px);
+}
+
+.back-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  color: #ffffff; /* White text */
+  border: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  cursor: pointer;
+  margin-bottom: 16px;
+  transition: color 0.3s ease;
+}
+
+.back-btn:hover {
+  color: #00c8ff; /* Light blue hover effect */
+}

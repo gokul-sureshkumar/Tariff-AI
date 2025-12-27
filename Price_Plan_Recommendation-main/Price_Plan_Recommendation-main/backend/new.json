@@ -1,0 +1,242 @@
+{
+  "metadata": {
+    "total_plans": 12,
+    "last_updated": "2025-09-01",
+    "currency": "INR",
+    "description": "Telecom service plans with pricing and usage details"
+  },
+  "plans": [
+    {
+      "plan_name": "Lite Voice 99",
+      "monthly_rental": 99,
+      "rate_local_day": 0.2,
+      "rate_local_eve": 0.12,
+      "rate_local_night": 0.12,
+      "rate_intl": 0.35,
+      "free_day": 100,
+      "free_eve": 50,
+      "free_night": 50,
+      "free_intl": 0,
+      "category": "budget",
+      "best_for": ["light_users", "basic_calling"],
+      "total_free_local_mins": 200
+    },
+    {
+      "plan_name": "Lite Value 149",
+      "monthly_rental": 149,
+      "rate_local_day": 0.18,
+      "rate_local_eve": 0.1,
+      "rate_local_night": 0.1,
+      "rate_intl": 0.32,
+      "free_day": 200,
+      "free_eve": 100,
+      "free_night": 100,
+      "free_intl": 0,
+      "category": "budget",
+      "best_for": ["moderate_users", "balanced_calling"],
+      "total_free_local_mins": 400
+    },
+    {
+      "plan_name": "Day Saver 249",
+      "monthly_rental": 249,
+      "rate_local_day": 0.15,
+      "rate_local_eve": 0.09,
+      "rate_local_night": 0.1,
+      "rate_intl": 0.28,
+      "free_day": 500,
+      "free_eve": 100,
+      "free_night": 100,
+      "free_intl": 0,
+      "category": "mid_range",
+      "best_for": ["heavy_day_users", "business_users"],
+      "total_free_local_mins": 700
+    },
+    {
+      "plan_name": "Day Pro 349",
+      "monthly_rental": 349,
+      "rate_local_day": 0.14,
+      "rate_local_eve": 0.09,
+      "rate_local_night": 0.1,
+      "rate_intl": 0.27,
+      "free_day": 800,
+      "free_eve": 150,
+      "free_night": 150,
+      "free_intl": 0,
+      "category": "mid_range",
+      "best_for": ["heavy_day_users", "business_users", "professional_use"],
+      "total_free_local_mins": 1100
+    },
+    {
+      "plan_name": "Night Owl 199",
+      "monthly_rental": 199,
+      "rate_local_day": 0.18,
+      "rate_local_eve": 0.12,
+      "rate_local_night": 0.05,
+      "rate_intl": 0.32,
+      "free_day": 50,
+      "free_eve": 100,
+      "free_night": 800,
+      "free_intl": 0,
+      "category": "budget",
+      "best_for": ["night_users", "evening_users", "shift_workers"],
+      "total_free_local_mins": 950
+    },
+    {
+      "plan_name": "Midnight Max 299",
+      "monthly_rental": 299,
+      "rate_local_day": 0.17,
+      "rate_local_eve": 0.12,
+      "rate_local_night": 0.0,
+      "rate_intl": 0.3,
+      "free_day": 100,
+      "free_eve": 200,
+      "free_night": 1500,
+      "free_intl": 0,
+      "category": "mid_range",
+      "best_for": ["night_users", "heavy_night_users", "night_shift_workers"],
+      "total_free_local_mins": 1800
+    },
+    {
+      "plan_name": "All-Rounder 299",
+      "monthly_rental": 299,
+      "rate_local_day": 0.16,
+      "rate_local_eve": 0.08,
+      "rate_local_night": 0.08,
+      "rate_intl": 0.28,
+      "free_day": 300,
+      "free_eve": 300,
+      "free_night": 300,
+      "free_intl": 10,
+      "category": "mid_range",
+      "best_for": ["balanced_users", "all_time_users", "mixed_usage"],
+      "total_free_local_mins": 900
+    },
+    {
+      "plan_name": "All-Rounder Pro 399",
+      "monthly_rental": 399,
+      "rate_local_day": 0.15,
+      "rate_local_eve": 0.08,
+      "rate_local_night": 0.08,
+      "rate_intl": 0.27,
+      "free_day": 400,
+      "free_eve": 400,
+      "free_night": 400,
+      "free_intl": 20,
+      "category": "mid_range",
+      "best_for": ["balanced_users", "heavy_users", "premium_balanced"],
+      "total_free_local_mins": 1200
+    },
+    {
+      "plan_name": "Unlimited Talk 399",
+      "monthly_rental": 399,
+      "rate_local_day": 0.14,
+      "rate_local_eve": 0.07,
+      "rate_local_night": 0.07,
+      "rate_intl": 0.28,
+      "free_day": 900,
+      "free_eve": 600,
+      "free_night": 600,
+      "free_intl": 0,
+      "category": "mid_range",
+      "best_for": ["heavy_users", "unlimited_local", "high_volume"],
+      "total_free_local_mins": 2100
+    },
+    {
+      "plan_name": "Ultra Unlimited 499",
+      "monthly_rental": 499,
+      "rate_local_day": 0.13,
+      "rate_local_eve": 0.07,
+      "rate_local_night": 0.06,
+      "rate_intl": 0.26,
+      "free_day": 1200,
+      "free_eve": 800,
+      "free_night": 800,
+      "free_intl": 0,
+      "category": "premium",
+      "best_for": ["heavy_users", "unlimited_local", "premium_users"],
+      "total_free_local_mins": 2800
+    },
+    {
+      "plan_name": "Global Saver 399",
+      "monthly_rental": 399,
+      "rate_local_day": 0.16,
+      "rate_local_eve": 0.08,
+      "rate_local_night": 0.08,
+      "rate_intl": 0.23,
+      "free_day": 300,
+      "free_eve": 200,
+      "free_night": 200,
+      "free_intl": 50,
+      "category": "mid_range",
+      "best_for": ["international_users", "global_calling", "moderate_intl"],
+      "total_free_local_mins": 700
+    },
+    {
+      "plan_name": "Global Connect 599",
+      "monthly_rental": 599,
+      "rate_local_day": 0.15,
+      "rate_local_eve": 0.08,
+      "rate_local_night": 0.08,
+      "rate_intl": 0.2,
+      "free_day": 500,
+      "free_eve": 300,
+      "free_night": 300,
+      "free_intl": 100,
+      "category": "premium",
+      "best_for": ["international_users", "heavy_global_calling", "premium_intl"],
+      "total_free_local_mins": 1100
+    }
+  ],
+  "categories": {
+    "budget": [
+      "Lite Voice 99",
+      "Lite Value 149", 
+      "Night Owl 199"
+    ],
+    "mid_range": [
+      "Day Saver 249",
+      "All-Rounder 299",
+      "Midnight Max 299", 
+      "Day Pro 349",
+      "All-Rounder Pro 399",
+      "Unlimited Talk 399",
+      "Global Saver 399"
+    ],
+    "premium": [
+      "Ultra Unlimited 499",
+      "Global Connect 599"
+    ]
+  },
+  "usage_recommendations": {
+    "heavy_day_users": [
+      "Day Saver 249",
+      "Day Pro 349",
+      "Unlimited Talk 399",
+      "Ultra Unlimited 499"
+    ],
+    "night_users": [
+      "Night Owl 199",
+      "Midnight Max 299"
+    ],
+    "international_users": [
+      "All-Rounder 299",
+      "All-Rounder Pro 399", 
+      "Global Saver 399",
+      "Global Connect 599"
+    ],
+    "balanced_users": [
+      "All-Rounder 299",
+      "All-Rounder Pro 399",
+      "Unlimited Talk 399"
+    ]
+  },
+  "common_queries": {
+    "cheapest_plan": "Lite Voice 99",
+    "best_value_budget": "Night Owl 199",
+    "best_day_plan": "Day Pro 349",
+    "best_night_plan": "Midnight Max 299",
+    "best_international": "Global Connect 599",
+    "most_balanced": "All-Rounder Pro 399",
+    "premium_choice": "Ultra Unlimited 499"
+  }
+}
